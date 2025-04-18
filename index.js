@@ -11,13 +11,13 @@ output.value+=this.getAttribute("data-value");
     })
 }
 
-let remove =document.querySelector("#clear");
+let remove =document.getElementById("#clear");
 remove.addEventListener("click", function(){
     output.value= "";
 })
 
-let answer = document.querySelector("#equal");
+let answer = document.getElementById("#equal");
 answer.addEventListener("click", function(){
-    output.value = 'eval'();
+    output.value = eval(output.value);
     
 })
