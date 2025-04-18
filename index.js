@@ -1,12 +1,12 @@
 let button = document.querySelectorAll(".digit");
 for (i of button){
-    i.addEventListerner("click", function(){
+    i.addEventListener("click", function(){
         })
 }
 
 let output = document.querySelector(".display");
 for (i of button){
-    i.addEventListerner("click", function(){
+    i.addEventListener("click", function(){
 output.value+=this.getAttribute("data-value");
     })
 }
@@ -18,6 +18,6 @@ remove.addEventListener("click", function(){
 
 let answer = document.querySelector("#equal");
 answer.addEventListener("click", function(){
-    output.value = eval(output.value);
+    output.value = 'eval'();
     
 })
